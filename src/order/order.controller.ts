@@ -14,4 +14,9 @@ export class OrderController {
   async getMenu(): Promise<string[]> {
     return this.orderService.getMenu();
   }
+
+  @Get()
+  async getPopulerMenu(): Promise<string[]> {
+    return this.orderService.getPopulerMenu();
+  }
 }

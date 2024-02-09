@@ -8,6 +8,10 @@ export class OrderService {
     return this.menu;
   }
 
+  getPopulerMenu() {
+    return this.menu;
+  }
+
   createMenu(menu: string) {
     this.menu.push(menu);
   }
